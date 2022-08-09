@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header role = "banner"> 
+        <h1>HTML 5 Learning Session</h1> 
+        <p>This page should be tried in safari, chrome or Mozila.</p> 
+     </header> 
+  
+     <nav> 
+        <ul> 
+           <li><a href = "https://www.tutorialspoint.com/html">HTML Tutorial</a></li> 
+           <li><a href = "https://www.tutorialspoint.com/css">CSS Tutorial</a></li> 
+           <li><a href = "https://www.tutorialspoint.com/javascript">
+           JavaScript Tutorial</a></li> 
+        </ul> 
+     </nav> 
+  
+     <article> 
+        <section> 
+           <p>Once article can have multiple sections</p>
+        </section> 
+     </article> 
+  
+     <aside> 
+        <p>This is  aside part of the web page</p> 
+     </aside> 
+
+     <form action = "http://example.com/cgiscript.pl" method = "post">  
+        <p> 
+           <label for = "firstname">first name: </label> 
+           <input type = "text" id = "firstname"><br /> 
+        
+           <label for = "lastname">last name: </label> 
+           <input type = "text" id = "lastname"><br /> 
+        
+           <label for = "email">email: </label> 
+           <input type = "text" id = "email"><br> 
+        
+           <input type = "radio" name = "sex" value = "male"> Male<br> 
+           <input type = "radio" name = "sex" value = "female"> Female<br> 
+           <input type = "submit" value = "send"> <input type = "reset"> 
+        </p> 
+     </form> 
+
+     <form action = "/cgi-bin/html5.cgi" method = "get">
+        Enter email : <input type = "text" name = "newinput" required/>
+        <p>Try to submit using Submit button</p>
+        <input type = "submit" value = "submit" />
+     </form>
+     <div itemscope>
+        <section itemscope itemtype = "http://data-vocabulary.org/Person">
+           <h1 itemprop = "name">Gopal K Varma</h1>
+        
+           <p>
+              <img itemprop = "photo" 
+                 src = "http://www.tutorialspoint.com/green/images/logo.png">
+           </p>
+           
+           <a itemprop = "url" href = "#">Site</a>
+        </section>
+     </div>
+
+     <div itemscope>
+        <p>My name is <span itemprop = "name">Zara</span></p>
+     </div>
+     
+     <div itemscope>
+        <p>My name is <span itemprop = "name">Nuha</span></p>
+     </div>
+     <div itemscope>
+        My birthday is:
+        <time itemprop = "birthday" datetime = "1971-05-08">
+           Aug 5th 1971
+        </time>
+     </div>
+     <center>
+        <h2>Drag and drop HTML5 demo</h2>
+        <div>Try to drag the purple box around.</div>
+        
+        <div id = "boxA" draggable = "true" 
+           ondragstart = "return dragStart(ev)">
+           <p>Drag Me</p>
+        </div>
+        
+        <div id = "boxB">Dustbin</div>
+     </center>
+
+     <h2 align = "center">HTML5 SVG Circle</h2>
+		
+     <svg align = "center" id = "svgelem" height = "200" xmlns = "http://www.w3.org/2000/svg">
+        <circle id = "redcircle" cx = "50" cy = "50" r = "50" fill = "red" />
+     </svg>
+     <svg id = "svgelem" height = "200" xmlns = "http://www.w3.org/2000/svg">
+        <rect id = "redrect" width = "300" height = "100" fill = "red" />
+     </svg>
+     <svg id = "svgelem" height = "200" xmlns = "http://www.w3.org/2000/svg">
+        <line x1 = "0" y1 = "0" x2 = "200" y2 = "100" 
+           style = "stroke:red;stroke-width:2"/>
+     </svg>
+
+     <svg id = "svgelem" height = "200" xmlns = "http://www.w3.org/2000/svg">
+        <defs>
+           <radialGradient id="gradient" cx = "50%" cy = "50%" r = "50%" fx = "50%" 
+              fy = "50%">
+              <stop offset = "0%" style = "stop-color:rgb(200,200,200); stop-opacity:0"/>
+              <stop offset = "100%" style = "stop-color:rgb(0,0,255); stop-opacity:1"/>
+           </radialGradient>
+        </defs>
+        <ellipse cx = "100" cy = "50" rx = "100" ry = "50" 
+           style = "fill:url(#gradient)" />
+     </svg>
+     <svg id = "svgelem" height = "200" xmlns = "http://www.w3.org/2000/svg">
+        <polygon points = "100,10 40,180 190,60 10,60 160,180" fill = "red"/>
+     </svg>
+     <div>
+     <video  width = "300" height = "200" controls autoplay>
+        <source src = "/html5/foo.ogg" type ="video/ogg" />
+        <source src = "/html5/foo.mp4" type = "video/mp4" />
+        Your browser does not support the <video> element.
+     </video>
+    </div>
+     <div itemscope>
+        <section itemscope itemtype = "http://data-vocabulary.org/Person">
+           <h1 itemprop = "name">Gopal K Varma</h1>
+        
+           <p>
+              <img itemprop = "photo" 
+                 src = "http://www.tutorialspoint.com/green/images/logo.png">
+           </p>
+           
+           <a itemprop = "url" href = "#">Site</a>
+        </section>
+     </div>
+     <div>
+        <audio controls autoplay>
+            <source src = "/html5/audio.ogg" type = "audio/ogg" />
+            <source src = "/html5/audio.wav" type = "audio/wav" />
+            Your browser does not support the <audio> element.
+         </audio>
+     </div>
+
+  
+     <footer> 
+        <p>Created by <a href = "https://tutorialspoint.com/">Vishal Html Learning time</a></p> 
+     </footer> 
+</body>
+</html>
